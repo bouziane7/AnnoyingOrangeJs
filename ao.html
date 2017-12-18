@@ -1,0 +1,47 @@
+
+<html>
+<head>
+    <title>Annoying Orange</title>
+    <script src="functions.js"></script>
+</head>
+
+<body>
+    <style>
+        /* Since There are Only little css i didnt use external css*/
+        body {
+            background-image: url("images/BG.jpg");
+            background-repeat: repeat;
+        }
+        
+        #fields {
+            position: relative;
+            width: 530px;
+            height: 500px;
+            background-image: url("images/field.png");
+            margin-left:30%;
+        }
+        
+        #annoyingOrange {
+
+            position: absolute;
+        }
+
+    </style>
+
+
+    <h1 style="color:rgb(238, 105, 16);text-align:center;">Catch The Annoying Orange</h1>
+
+    <h3 style="color:rgb(54, 15, 228);text-align:center;">Your Score is <span id="score">0</span> </h3>
+    <h3 style="color:rgb(54, 15, 228);text-align:center;" id="over"> </h3>
+    
+    <div id="fields"> <!-- Our Green Field --> 
+
+        <div id="annoyingOrange"> <!-- Our annoying Orange -->
+            <img src="images/ao.png" onclick="al();" style="width:80px;height:80px;margin:30px"/>    
+        </div>
+    
+    </div>
+    
+</body>
+
+</html>
